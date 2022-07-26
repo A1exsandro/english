@@ -5,15 +5,37 @@
   --color-text-dark: #000;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-text-dark);
+  color: var(--color-text-light);
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.containerCards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 15rem;
+  gap: 1rem;
+}
+
 .card_content {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   transform-style: preserve-3d;
   transition: transform 600ms ease-in-out;
 }
 
 .card_content--flipped {
+  transform: rotateY(180deg);
+}
+
+.card_content:hover {
   transform: rotateY(180deg);
 }
 

@@ -7,7 +7,7 @@ import English from './components/English';
 function App() {
   return(
     // <Todo /> 
-    <English flipped={false}/>
+    <English />
   );
 }
 
